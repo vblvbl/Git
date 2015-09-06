@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.handmark.pulltorefresh.library.PullToRefreshScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pullFreshScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    ptr:ptrAnimationStyle="flip"
+    ptr:ptrMode="both" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1000dp"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
+
+        <RelativeLayout
+            android:id="@+id/whtherPartOneReLayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#3CB371" >
+
+            <ImageButton
+                android:id="@+id/whtherPartOneReLayoutib"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:background="#11000000"
+                android:src="@drawable/whther_select" />
+
+            <ImageView
+                android:id="@+id/whtherPartOneReLayoutiv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/whtherPartOneReLayouttv1"
+                android:src="@drawable/locationicon" />
+
+            <TextView
+                android:id="@+id/whtherPartOneReLayouttv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="北京"
+                android:textColor="@color/redtoblack"
+                android:textSize="27dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/whtherPartOneReLayouttv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="2015年01月03日"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#99000000" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp" >
+
+            <com.shiliangyu.tempdc.view.MyViewPager
+                android:id="@+id/toolViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp" >
+            </com.shiliangyu.tempdc.view.MyViewPager>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/whtherTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="#44000000"
+                    android:gravity="center"
+                    android:textColor="#88FFFFFF"
+                    android:textSize="16dp" />
+
+                <LinearLayout
+                    android:id="@+id/pointGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </RelativeLayout>
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#99000000" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#99000000" />
+
+        <LinearLayout
+            android:id="@+id/whtherPartTwoLiLayout"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/whtherPartTwoLiLayouttv1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="星期日"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#99000000" />
+
+            <TextView
+                android:id="@+id/whtherPartTwoLiLayouttv2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="25dp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#99000000" />
+
+            <TextView
+                android:id="@+id/whtherPartTwoLiLayouttv3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="发布时间"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#99000000" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#99000000" />
+
+        <LinearLayout
+            android:id="@+id/whtherPartThreeLiLayout"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#99000000" />
+
+            <TextView
+                android:id="@+id/whtherPartThreeLiLayouttv1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="4°"
+                android:textSize="83dp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#99000000" />
+
+            <LinearLayout
+                android:id="@+id/whtherPartThreeLiLayoutLiLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/whtherPartThreeLiLayoutLiLayouttv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="风力：4-5级"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/whtherPartThreeLiLayoutLiLayoutiv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/yin" />
+
+                <TextView
+                    android:id="@+id/whtherPartThreeLiLayoutLiLayouttv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="湿度：24%"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#99000000" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="今日风向"
+                    android:textSize="22dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#99000000" />
+
+                <TextView
+                    android:id="@+id/whtherPartThreeLiLayouttv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="请刷新"
+                    android:textSize="25dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#99000000" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#99000000" />
+
+        <TableLayout
+            android:id="@+id/whtherPartFourTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#FFFFFF"
+            android:gravity="center" >
+
+            <TableRow
+                android:id="@+id/whtherPartFourTabLyTabRowOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/whtherPartFourTabLyTabRowOnetv1"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="今天"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/whtherPartFourTabLyTabRowOneiv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/yun" />
+
+                <TextView
+                    android:id="@+id/whtherPartFourTabLyTabRowOnetv2"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="3°C"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/whtherPartFourTabLyTabRowOnetv3"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="-5°C"
+                    android:textSize="20dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/whtherPartFourTabLyTabRowTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/whtherPartFourTabLyTabRowTwotv1"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="星期天"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/whtherPartFourTabLyTabRowTwoiv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/mai" />
+
+                <TextView
+                    android:id="@+id/whtherPartFourTabLyTabRowTwotv2"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="2°C"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/whtherPartFourTabLyTabRowTwotv3"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="-4°C"
+                    android:textSize="20dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/whtherPartFourTabLyTabRowThree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/whtherPartFourTabLyTabRowThreetv1"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="星期一"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/whtherPartFourTabLyTabRowThreeiv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/qing" />
+
+                <TextView
+                    android:id="@+id/whtherPartFourTabLyTabRowThreetv2"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="2°C"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/whtherPartFourTabLyTabRowThreetv3"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="2°C"
+                    android:textSize="20dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/whtherPartFourTabLyTabRowFour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/whtherPartFourTabLyTabRowFourtv1"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="星期二"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/whtherPartFourTabLyTabRowFouriv"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/mai" />
+
+                <TextView
+                    android:id="@+id/whtherPartFourTabLyTabRowFourtv2"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="2°C"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/whtherPartFourTabLyTabRowFourtv3"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="-4°C"
+                    android:textSize="20dp" />
+            </TableRow>
+        </TableLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#99000000" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#99000000" />
+
+        <TableLayout
+            android:id="@+id/whtherPartFiveTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:background="#FFFFFF"
+            android:gravity="center" >
+
+            <TableRow
+                android:id="@+id/whtherPartFiveTabLyTabRowOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/whtherPartFiveTabLyTabRowOnetv1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="晨练指数"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#2B6FD5"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/whtherPartFiveTabLyTabRowOnetv2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="天气不错，空气清新，是您晨练的大好时机，建议不同年龄段的人们积极参加户外健身活动。" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/whtherPartFiveTabLyTabRowTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/whtherPartFiveTabLyTabRowTwotv1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="舒适度"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#2B6FD5"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/whtherPartFiveTabLyTabRowTwotv2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="白天虽然天气晴好，但早晚会感觉偏凉，午后舒适、宜人。" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/whtherPartFiveTabLyTabRowThree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/whtherPartFiveTabLyTabRowThreetv1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="穿衣指数"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#2B6FD5"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/whtherPartFiveTabLyTabRowThreetv2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="天气冷，建议着棉服、羽绒服、皮夹克加羊毛衫等冬季服装。年老体弱者宜着厚棉衣、冬大衣或厚羽绒服。" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/whtherPartFiveTabLyTabRowFour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/whtherPartFiveTabLyTabRowFourtv1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="感冒指数"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#2B6FD5"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/whtherPartFiveTabLyTabRowFourtv2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="昼夜温差较大，较易发生感冒，请适当增减衣服。体质较弱的朋友请注意防护。" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/whtherPartFiveTabLyTabRowFive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/whtherPartFiveTabLyTabRowFivetv1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="旅游指数"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#2B6FD5"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/whtherPartFiveTabLyTabRowFivetv2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="天气较好，气温稍低，会感觉稍微有点凉，不过也是个好天气哦。适宜旅游，可不要错过机会呦！" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/whtherPartFiveTabLyTabRowSix"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/whtherPartFiveTabLyTabRowSixtv1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="紫外线强度"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#2B6FD5"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/whtherPartFiveTabLyTabRowSixtv2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="紫外线强度较弱，建议出门前涂擦SPF在12-15之间、PA+的防晒护肤品。" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/whtherPartFiveTabLyTabRowSeven"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/whtherPartFiveTabLyTabRowSeventv1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="洗车指数"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#2B6FD5"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/whtherPartFiveTabLyTabRowSeventv2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="较适宜洗车，未来一天无雨，风力较小，擦洗一新的汽车至少能保持一天。" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/whtherPartFiveTabLyTabRowEight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/whtherPartFiveTabLyTabRowEighttv1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="运动指数"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#2B6FD5"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/whtherPartFiveTabLyTabRowEighttv2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="天气较好，但考虑气温较低，推荐您进行室内运动，若户外适当增减衣物并注意防晒。" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/whtherPartFiveTabLyTabRowNight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/whtherPartFiveTabLyTabRowNighttv1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="约会指数"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#2B6FD5"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/whtherPartFiveTabLyTabRowNighttv2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="天气较好，和恋人携手出游，实在是增进感情、享受浪漫的人生乐事。" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/whtherPartFiveTabLyTabRowTen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/whtherPartFiveTabLyTabRowTentv1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="雨伞指数"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#2B6FD5"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/whtherPartFiveTabLyTabRowTentv2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="天气较好，您在出门的时候无须带雨伞。" />
+            </TableRow>
+        </TableLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FFFFFF" />
+    </LinearLayout>
+
+</com.handmark.pulltorefresh.library.PullToRefreshScrollView>
