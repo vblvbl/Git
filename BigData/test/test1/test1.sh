@@ -1,0 +1,1 @@
+#!/bin/bash#it is used for changed csv form#my org file is named input.csvcd ~/Desktop/awk -F',' '{print $1"\t"$2"\t"$3"\t"$4"\t"$5"\t"$6}' input.csv >>tmp.txtcat tmp.txt >input.csvrm -rf tmp.txtecho "it is sucessful!"

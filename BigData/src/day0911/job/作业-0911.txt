@@ -1,0 +1,6 @@
+1、读取、写入xml
+使用StreamInputFormat、StreamXmlRecordReader
+操作文件：
+/home/zkpk/hadoop-2.5.1/etc/hadoop/yarn-site.xml
+
+2、实现sogou.10k数据用sequencefileinputformat读取，并且取出uid字段去重后写成sequencefileoutputformat格式
