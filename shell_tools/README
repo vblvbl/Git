@@ -1,0 +1,13 @@
+1.文件分为master和slave两个文件夹，先把两个文件夹拷贝到各自主机
+2.（安装java环境）先各自执行文件夹中java_build.sh(root用户执行)
+3.（设置网络环境）同时执行文件中net_set.sh，如果显示出来的ip可用尽量不用修改成静态(root用户执行)
+   ps：设置中参考另外主机的ip和主机
+3.（免密钥）slave执行［slave］中的ssh_slave.sh循环等待，再master执行［master］文件夹中的ssh_master.sh
+4.（hadoop环境设置）
+   a.对master配置hadoop参数等执行hadoop_build.sh，完成后手动source ~/.bash_profile
+   b.再执行scp -r BinSoft/ 用户@主机名:~/（把master中的hadoop文件全部发送给slave），
+   c.slave执行hadoop_slave.sh,完成后手动source ~/.bash_profile
+
+
+至此环境搭建完毕，可以在master格式化并启动服务了。
+               master代表主节点，slave代表从节点，无特定含义，主机名等可以自定义
