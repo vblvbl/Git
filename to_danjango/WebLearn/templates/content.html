@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+</head>
+<body>
+{%if error%}
+<ul>
+    {%for x in error%}
+    <li>{{x}}</li>
+    {%endfor%}
+</ul>
+{%endif%}
+<form method="get" action="/content/">
+    {% csrf_token %}
+    <p>Subject:<input type="text" name="subject" value="{{subject}}"></p>
+
+    <p>your email:<input type="text" name="email" value="{{email}}"></p>
+
+    <p>Message:<textarea name="message" rows="10" cols="50">{{message}}</textarea></p>
+    <input type="submit" value="submit">
+</form>
+</body>
+</html>
